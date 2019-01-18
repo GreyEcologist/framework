@@ -42,11 +42,10 @@ spec.before(async (stage) => {
 spec.test('assignes ledger abilities for an account', async (ctx) => {
   const ledger = ctx.get('ledger');
   const bob = ctx.get('bob');
-  await ledger.assignAbilities(bob, [AssetLedgerAbility.CREATE_ASSET, AssetLedgerAbility.TOGGLE_TRANSFERS]);
+  await ledger.assignAbilities(bob, [AssetLedgerAbility.CREATE_ASSET]);
   const abilities = await ledger.getAbilities(bob);
-  ctx.deepEqual(abilities, [AssetLedgerAbility.CREATE_ASSET, AssetLedgerAbility.TOGGLE_TRANSFERS]);
+  ctx.deepEqual(abilities, [AssetLedgerAbility.CREATE_ASSET]);
 });
-
 
 spec.test('assignes ledger abilities to an order gateway', async (ctx) => {
   const ledger = ctx.get('ledger');

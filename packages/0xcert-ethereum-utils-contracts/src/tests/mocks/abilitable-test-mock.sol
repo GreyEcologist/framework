@@ -8,7 +8,7 @@ contract AbilitableTestMock is
   function ability1()
     external
     view
-    hasAbilities(1)
+    hasAbility(1)
     returns (string memory)
   {
     return "1";
@@ -17,7 +17,7 @@ contract AbilitableTestMock is
   function ability2()
     external
     view
-    hasAbilities(2)
+    hasAbility(2)
     returns (string memory)
   {
     return "2";

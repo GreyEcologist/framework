@@ -1,17 +1,18 @@
 import { Mutation } from '@0xcert/ethereum-generic-provider';
 import { encodeParameters } from '@0xcert/ethereum-utils';
 import { AssetLedger } from '../core/ledger';
+import { AssetLedgerAbility } from '@0xcert/scaffold';
 
-const functionSignature = '0xf394b6df';
-const inputTypes = ['address', 'uint256'];
+const functionSignature = '0x99841855';
+const inputTypes = ['address', 'uint8[]'];
 
 /**
  * Revokes(removes) abilities from account.
  * @param ledger Asset ledger instance.
  * @param accountId Address of the account for which abilities will be revoked.
- * @param abilities Abilities as number representing bitfield.
+ * @param abilities List of the abilities.
  */
-export default async function(ledger: AssetLedger, accountId: string, abilities: string) {
+export default async function(ledger: AssetLedger, accountId: string, abilities: AssetLedgerAbility[]) {
   const attrs = {
     from: ledger.provider.accountId,
     to: ledger.id,

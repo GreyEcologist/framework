@@ -13,9 +13,9 @@ contract XcertCreateProxy is
 
   /**
    * @dev List of abilities:
-   * 2 - Ability to execute create. 
+   * 1 - Ability to execute create. 
    */
-  uint8 constant ABILITY_TO_EXECUTE = 2;
+  uint8 constant ABILITY_TO_EXECUTE = 1;
 
   /**
    * @dev Creates a new NFT.
@@ -31,7 +31,7 @@ contract XcertCreateProxy is
     bytes32 _imprint
   )
     external
-    hasAbilities(ABILITY_TO_EXECUTE)
+    hasAbility(ABILITY_TO_EXECUTE)
   {
     Xcert(_xcert).create(_to, _id, _imprint);
   }
