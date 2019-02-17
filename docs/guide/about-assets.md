@@ -1,6 +1,6 @@
 # About assets
 
-When discussing assets, we think of different things of value. The simplest explanation relates to the items you keep in your physical wallet. It usually holds some cash in banknotes and coins, but also a bunch of other things. These other things like your ID, driving license, social security card, etc. all represent unique assets.
+When discussing assets, we think of different things of value. The simplest explanation relates to the items you keep in your physical wallet. It usually holds some cash in banknotes and coins, but also a bunch of other things. These other things like your ID, driver license, social security card, etc. all represent unique assets.
 
 ## Assets are non-fungible
 
@@ -10,7 +10,7 @@ Within the realm of the blockchain and other distributed platforms, these assets
 
 ## Explaining the concept
 
-Explaining the concept is a challenge on its own. Let's try with an example. Your driving license is an asset. You own it, and that makes you the owner of your driving license. Generally speaking, driving licenses as a category of documents are an asset ledger since they all contain the same set of data. The government issues your driving license which makes the government the issuer of the license.
+Explaining the concept is a challenge on its own. Let's try with an example. Your driver license is an asset. You own it, and that makes you the owner of your driver license. Generally speaking, driver licenses as a category of documents are an asset ledger since they all contain the same set of data. The government issues your driver license which makes the government the issuer of the license.
 
 A ledger, therefore, represents a folder containing the assets of a specific issuer and related owners. Only the users authorized by the ledger owner are allowed to manage the ledger. Depending on its configuration, authorized persons can handle the ledger and thus create and manage its assets.
 
